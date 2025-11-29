@@ -1,0 +1,241 @@
+/* Reset beberapa gaya default untuk tampilan yang lebih konsisten */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigasi Menu */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0f9b8e;
+}
+
+/* Layout untuk Hero Section di Homepage */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Gaya untuk bagian utama website */
+main {
+    padding: 40px 20px;
+}
+
+/* Bagian Produk, Struktur, dan Founder */
+section h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Direksi atau Jajaran Manajemen */
+.direksi {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.direksi-member {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.direksi-member:hover {
+    transform: translateY(-10px);
+}
+
+.direksi-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.direksi-member h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.direksi-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Bagian Produk */
+.produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.produk-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.produk-item:hover {
+    transform: translateY(-10px);
+}
+
+.produk-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.produk-item h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.produk-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Kontak Section */
+.kontak {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.kontak ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.kontak ul li {
+    margin: 10px 0;
+}
+
+.kontak ul li a {
+    color: #0f9b8e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.kontak ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Founder Section */
+.founder {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.founder img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.founder h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.founder p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsif untuk perangkat kecil */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .direksi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produk {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .produk-item {
+        margin: 0 auto;
+    }
+}
